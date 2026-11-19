@@ -1,6 +1,6 @@
 # Predicción y Análisis del Tipo de Parto en Bucaramanga mediante Machine Learning
 
-![Banner del Proyecto](assets/banner.jpeg)
+![Banner del Proyecto](banner.jpeg)
 
 ## 1. Objetivo General
 Analizar registros de nacidos vivos en Bucaramanga mediante exploración estadística, preparación de datos, modelos de clasificación supervisada y algoritmos de agrupamiento no supervisado. El objetivo de clasificación es `TIPO PARTO`; en la tercera entrega se estudia, además, si las observaciones forman grupos según sus características neonatales, obstétricas y sociodemográficas.
