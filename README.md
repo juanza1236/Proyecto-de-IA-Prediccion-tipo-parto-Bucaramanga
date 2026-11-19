@@ -1,1 +1,0 @@
-# Proyecto-de-IA-Prediccion-tipo-parto-Bucaramanga
