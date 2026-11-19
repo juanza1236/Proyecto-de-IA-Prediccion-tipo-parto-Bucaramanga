@@ -46,7 +46,21 @@ Analizar registros de nacidos vivos en Bucaramanga mediante exploración estadí
 * **K-Means ($k=3$):** Alcanza un **Silhouette Score de 0.459** y **Davies-Bouldin de 0.783** en el espacio PCA 2D, segmentando la población en 3 perfiles sociodemográficos/obstétricos equilibrados.
 * **DBSCAN (`eps=0.1541`, `min_samples=10`):** Identifica una región densa principal con el **98.29%** de los nacimientos y aísla **788 observaciones (1.52%) como ruido**, correspondientes a perfiles clínicos atípicos.
 
-## 8. Estructura del Repositorio
+## 8. Video de Sustentación
+
+[![Ver video de sustentación](https://img.youtube.com/vi/KQUUsWDG27M/maxresdefault.jpg)](https://youtu.be/KQUUsWDG27M?si=jeTo-6yOcBgfzMuS)
+
+🎥 **[Ver el video en YouTube](https://youtu.be/KQUUsWDG27M?si=jeTo-6yOcBgfzMuS)**
+
+En este video presentamos un recorrido por el notebook de Google Colab del proyecto, explicando de qué trata y cuáles fueron sus resultados:
+
+* **Parte 1 – Datos y limpieza:** carga del dataset de Nacidos Vivos de Bucaramanga, corrección de codificación, análisis de valores atípicos (IQR) y codificación de variables.
+* **Parte 2 – Aprendizaje supervisado:** comparación de Decision Tree, Random Forest, SVM y redes neuronales MLP para predecir el tipo de parto. Todos los modelos alcanzan un techo de ~61 %–62,27 % de accuracy.
+* **Parte 3 – Aprendizaje no supervisado:** escalamiento, reducción de dimensionalidad (PCA y t-SNE) y agrupamiento con K-Means y DBSCAN, que muestra que cesáreas y partos espontáneos se mezclan en todos los perfiles de madres.
+
+**Conclusión principal:** con variables prenatales y sociodemográficas no es posible distinguir de forma confiable entre cesárea y parto espontáneo. La decisión parece depender de factores clínicos durante el parto que el dataset no recoge.
+
+## 9. Estructura del Repositorio
 ```text
 ├── assets/
 │   └── Banner_Proyecto.png
@@ -54,4 +68,5 @@ Analizar registros de nacidos vivos en Bucaramanga mediante exploración estadí
 │   └── Prediccion_tipo_parto.ipynb
 ├── presentacion/
 │   └── Presentacion_Proyecto.pdf
+├──video/
 └── README.md
